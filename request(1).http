@@ -1,0 +1,65 @@
+
+// Curso de programacion 
+###
+POST http://localhost:9000/api/cursos
+Content-Type: application/json
+
+{
+  "id": 7,
+  "titulo": "Aprende  python",
+  "lenguaje": "js",
+  "vistas": 15200,
+  "nivel": "basico"  
+}
+
+###
+GET http://localhost:9000/api/cursos 
+
+###
+GET http://localhost:9000/api/cursos/66b501b8f4eb5fced6d58050 
+
+###
+DELETE http://localhost:9000/api/cursos/66b54cb45b5c132a477635fa
+
+###
+PUT http://localhost:9000/api/cursos/66b54cb45b5c132a477635fa
+Content-Type: application/json
+
+{
+  "titulo": "Aprende Python Avanzado",
+  "lenguaje": "javascript",
+  "vistas": 20000,
+  "nivel": "intermedio"
+}
+
+// Cursos de  Matematicas //
+###
+POST http://localhost:9000/api/matematicas
+Content-Type: application/json
+
+{
+  "id": 10,
+  "titulo": "Aprende teoria",
+  "materia": "teoria",
+  "vistas": 12440,
+  "nivel": "basico"
+}
+
+###
+GET http://localhost:9000/api/matematicas
+###
+GET http://localhost:9000/api/matematicas/1
+###
+DELETE http://localhost:9000/api/matematicas/66b677bef526f6c4d795a992
+###
+PUT http://localhost:9000/api/matematicas/66b677bef526f6c4d795a992
+Content-Type: application/json
+
+{
+  "titulo": "Aprende  Avanzado",
+  "materia": "álgebra teoria",
+  "vistas": 15000,
+  "nivel": "intermedio"
+}
+
+
